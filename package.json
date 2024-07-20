@@ -2,7 +2,8 @@
     "private": true,
     "scripts": {
         "dev": "vite",
-        "build": "vite build"
+        "build": "vite build",
+        "start": "node server.js"
     },
     "devDependencies": {
         "@popperjs/core": "^2.11.6",
@@ -20,6 +21,8 @@
     "dependencies": {
         "bootstrap-fileinput": "^5.5.4",
         "bootstrap-icons": "^1.11.3",
-        "jquery": "^3.7.1"
+        "jquery": "^3.7.1",
+        "vite": "^latest",
+        "laravel-vite-plugin": "^latest"
     }
 }
