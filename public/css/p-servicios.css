@@ -1,0 +1,168 @@
+.PSER-Main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 5em 58em auto;
+    gap: 0.5em;
+    padding: 2em 7.5em 7.5em 7.5em;
+    /* margin: 1.5em 3em; */
+}
+.PSER-Title { grid-row: 1; }
+
+.PSER-Text {
+    grid-row: 3;
+    border-radius: 0.75em;
+}
+
+.PSER-Img {
+    grid-row: 2;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 0.5em;
+}
+
+.PSER-I-1 {
+    grid-column: 1;
+    border-radius: 0.75em;
+    /* background-image:url('/assets/images/AdminWallpaper2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.PSER-I-2 {
+    grid-column: 2;
+    /* padding: 0.25em; */
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.25em;
+}
+
+.PSER-I-I-1 { 
+    grid-row: 1; border-radius: 0.75em;
+    /* background-image:url('/assets/images/AdminWallpaper2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+.PSER-I-I-2 { 
+    grid-row: 2; border-radius: 0.75em;
+    /* background-image:url('/assets/images/AdminWallpaper2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+.PSER-I-I-3 { 
+    grid-row: 3; border-radius: 0.75em;
+    /* background-image:url('/assets/images/AdminWallpaper2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+
+
+/* NUEVO DISENO */
+
+.PSER-Titulo {
+    margin-top: 3em;
+}
+.PSER-Titulo-1 {
+    width: 50em;
+    text-align: center;
+}
+
+.PSER-TextSeccion {
+    /* font-family: fantasy; */
+    letter-spacing: 1.5px;
+    font-size: 4em;  
+    font-weight: 600;
+    color: #4F9000;
+}
+
+/* .PSER-ND-Cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.PSER-ND-Cards-Ch {
+    height: 12em;
+    width: 30em;
+    border: 1px solid #4F9000;
+    border-radius: 0.75em;
+} */
+
+       /* --------------------------- | COSAS MENORES | ------------------------ */
+
+    .TESTSN-Container {
+        margin: 3em 0 1em 0;
+        padding: 0 7em;
+    }
+    
+    .TESTSN-CardsMain {
+        display: grid;
+        grid-auto-columns: 30em;
+        grid-template-rows: 12em;
+        gap: 1.5em;
+        overflow-x: auto;
+        width: 100%;
+        padding-bottom: 2em;
+    }
+    
+    .TESTSN-Cards {
+        grid-row: 1;
+        border: 3px solid #6DD93B;
+        background: #4f900018;
+        border-radius: 0.75em;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: background 0.7s ease-in-out;
+    }
+    
+    .TESTSN-Cards:hover {
+        background: transparent;
+        /* height: 25em;
+        width: 20em;
+        border-radius: 0.75em; */
+        background-image: url('/assets/images/World.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;   
+        cursor: grab;
+        /* transition: background 0.2s ease-out; */
+    }
+    
+    .TESTSN-Cards:hover .TESTSN-CardText {
+        color: #396601;
+        /* color: #fbff00; */
+    }
+    
+    .TESTSN-CardText {
+        font-size: 2.2em;
+        font-family:fantasy;
+        color: #6DD93B;
+        letter-spacing: 0.01em;
+        font-weight: 100;
+        /* direction: ltr; */
+    }
+
+    /* SCROLL DE SERVICIOS */
+
+    .TESTSN-CardsMain::-webkit-scrollbar { width: 2px; height: 3px;}
+    
+    .TESTSN-CardsMain::-webkit-scrollbar-track { background: transparent; }
+    
+    .TESTSN-CardsMain::-webkit-scrollbar-thumb {
+        background-color: #4F9000;
+        border-radius: 0.75em;
+    }
+
+    /* ---------------------------------------------------------------------- */
+

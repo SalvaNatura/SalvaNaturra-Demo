@@ -1,0 +1,76 @@
+/* --------------| Begin Global Clases |--------------- */
+
+* {
+    box-sizing: border-box;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+.GB-labelFont {
+    letter-spacing: 0.9px;
+    color: #576E85;
+    font-size: 0.95em;
+}
+
+.GBborderBlack {
+    border: 1px solid #000;
+    border-radius: 0.35em;
+}
+
+.GBMargin { margin: 0.25em; }
+
+.GB-Flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GB-SpaceB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.GB-SpaceOther {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.GBTextCenter {
+    text-align: center;
+}
+
+.GBL-Titulo4 {
+  font-size: 1.2em;
+  letter-spacing: 0.07em;
+}
+
+.GBL-Radius {
+  border-radius: 0.60em;
+}
+
+.montserrat-new-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+/* --------------| End Global Clases |--------------- */
+
+/*-------|   SPINNER CARGA DE SWAL FIRE   |------*/
+.swal-load-pro {
+  background: transparent;
+  height: 100px;
+  width: 100%;
+}
+.swal-loading-pro {
+  width: 50px;
+  height: 50px;
+  border: 5px solid blue;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}

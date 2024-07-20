@@ -1,0 +1,458 @@
+/* --------------| Begin Global Clases |--------------- */
+
+* {
+    box-sizing: border-box;
+    font-family: system-ui;
+    font-weight: 500;
+}
+
+.GB-labelFont {
+    letter-spacing: 0.9px;
+    color: #576E85;
+    font-size: 0.95em;
+}
+
+.GBborderBlack {
+    border: 1px solid #000;
+    border-radius: 0.35em;
+}
+
+.GBMargin { margin: 0.25em; }
+
+.GB-Flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.GB-SpaceB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.GB-SpaceOther {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.GBTextCenter {
+    text-align: center;
+}
+
+.GBL-Titulo4 {
+  font-size: 1.2em;
+  letter-spacing: 0.07em;
+}
+
+.GBL-Radius {
+  border-radius: 0.60em;
+}
+
+.montserrat-new-font {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+/* --------------| End Global Clases |--------------- */
+
+/*-------|   SPINNER CARGA DE SWAL FIRE   |------*/
+.swal-load-pro {
+  background: transparent;
+  height: 100px;
+  width: 100%;
+}
+.swal-loading-pro {
+  width: 50px;
+  height: 50px;
+  border: 5px solid blue;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+/* -----------------------------| Begin Main Screen |------------------------------- */
+
+:root {
+    --global--imagenInicio:  url('/assets/images/BannerTwo.png');
+    --global--verdeClaro: #6dd93b46; 
+    --global--verde: #6DD93B;
+    --global--verdeContraste: #4F9000;
+    --global--otroVerde: #1F8C3A;
+    --global--azul: #023E73;
+    --global--azulCl: #033E8C;
+
+    --global--verdeInventado: #21a342;
+}
+
+body {
+    /* PRIMERA OPCION UN POCO MAS OSCURA */
+    /* background: rgb(0,36,1);
+    background: linear-gradient(90deg, rgba(0,36,1,1) 0%, rgba(79,144,0,1) 90%, rgba(105,191,44,1) 100%); */
+
+    /* SEGUNDA OPCION  */
+    /* background: rgb(0,84,2); */
+    /* background: linear-gradient(90deg, rgba(0,84,2,1) 0%, rgba(79,144,0,1) 90%, rgba(105,191,44,1) 100%); */
+
+    /* TERCERA OPCION */
+    /* background: rgb(0,36,1); */
+    /* background: linear-gradient(90deg, rgba(0,36,1,1) 0%, rgba(79,144,0,1) 72%, rgba(105,191,44,1) 100%); */
+
+    /* CUARTA OPCION */
+    /* background: rgb(105,191,44); */
+    /* background: radial-gradient(circle, rgba(105,191,44,1) 0%, rgba(0,36,1,1) 94%); */
+
+    /* NUEVO COLOR */
+    background: #fff;
+}
+
+.MAS-BannerDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 2.5em 0;
+    width: 100% !important;
+    height: 90vh !important;
+}
+
+.MAS-BannerImg {
+    width: 97%;
+    height: 90vh;
+    background-image: var(--global--imagenInicio);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 1.5em;
+    border: 0.10em solid var(--global--otroVerde);
+}
+
+/* ---------------| MISION Y VISION |------------- */
+
+.PI-Div-FormatoInfo {
+    padding: 7em;
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 5em;
+}
+
+.PI-FI-1 {
+    grid-column: 1;
+    grid-row: 1;
+    /* border: 1px solid blue; */
+}
+
+.PI-FI-2 {
+    grid-column: 2;
+    grid-row: 1;
+    /* border: 1px solid blue; */
+}
+
+.PI-FormatoInfo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 4em auto;
+    gap: 0.25em;    
+}
+
+.PI-FormatoInfo-Title {
+    /* border: 1px solid red; */
+    grid-column: 1;
+    grid-row: 1; 
+}
+
+.PI-FormatoInfo-Title h3{
+    font-size: 4em;
+    color: #ffcc00;
+}
+
+.PI-FormatoInfo-Text {
+    /* border: 1px solid cadetblue; */
+    grid-column: 1;
+    grid-row: 2;
+    padding: 1em;
+    text-align: justify;
+}
+
+.PI-FormatoInfo-Text {
+    color: #fff;
+    font-size: 1.2em;
+    font-family: system-ui;
+    letter-spacing: 0.95px;
+    line-height: 2em;
+    border: 0.2em solid #002401;
+    border-radius: 1em;
+    padding: 1.25em;
+}
+
+
+/* -----------------------------| End Main Screen |------------------------------- */
+.MAS-Nav {
+  background-color: transparent;
+  color: #fff;
+  /* padding: 0.75em 0.75em; */
+  letter-spacing: 0.6px;
+}
+
+.MAS-Ul2 {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: 0 7em 0 7em;
+  height: 4.25em;
+  gap: 5em;
+}
+
+.MAS-LI2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 10em;
+  height: 4.25em;
+  transition: all 0.75s ease;
+  border-radius: 0.25em;
+  margin-top: 0.25em;
+}
+
+.MAS-A2 {
+  /* padding-top: 0.5em; */
+  text-decoration: none;
+  color: #4F9000;
+  font-size: 16px;
+}
+
+.MAS-LI2:hover {
+  /* background: rgb(0,36,1);
+  background: linear-gradient(90deg, rgba(0,36,1,1) 0%, rgba(79,144,0,1) 90%, rgba(105,191,44,1) 100%); */
+  color: #ffcc00;
+  background: #002401;
+}
+
+.MAS-LI2:hover .MAS-A2 {
+  color: #ffcc00;
+}
+
+#MAS-A2ICON img{
+  transform: scale(0.9);
+}
+/* .MAS-Nav {
+    background-color: transparent;
+    color: #fff;
+    padding: 21px 20px;
+    letter-spacing: 0.6px;
+}
+
+  .MAS-Nav .MAS-Ul2 {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 1.5em;
+  }
+
+  .MAS-Nav .MAS-Ul2 .MAS-LI2 {
+    margin-left: 1.5em;
+  }
+
+  .MAS-Nav .MAS-Ul2 .MAS-LI2:first-child {
+    margin-left: 15em;
+  }
+
+  .MAS-Nav .MAS-Ul2 .MAS-LI2:last-child {
+    margin-right: 15em;
+  }
+
+  .MAS-Nav .MAS-Ul2 .MAS-LI2 .MAS-A2 {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.4s ease;
+  }
+
+  .MAS-Nav .MAS-Ul2 .MAS-LI2 .MAS-A2:hover {
+    color: #ffcc00;
+    background-color: #4f9000;
+  }
+
+  #MAS-A2ICON img{
+    margin-top: -0.75em;
+    transform: scale(0.9);
+  } */
+
+
+.PSER-Main {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: 5em 58em auto;
+    gap: 0.5em;
+    padding: 2em 7.5em 7.5em 7.5em;
+    /* margin: 1.5em 3em; */
+}
+.PSER-Title { grid-row: 1; }
+
+.PSER-Text {
+    grid-row: 3;
+    border-radius: 0.75em;
+}
+
+.PSER-Img {
+    grid-row: 2;
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    gap: 0.5em;
+}
+
+.PSER-I-1 {
+    grid-column: 1;
+    border-radius: 0.75em;
+    /* background-image:url('/assets/images/AdminWallpaper2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+.PSER-I-2 {
+    grid-column: 2;
+    /* padding: 0.25em; */
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 0.25em;
+}
+
+.PSER-I-I-1 { 
+    grid-row: 1; border-radius: 0.75em;
+    /* background-image:url('/assets/images/AdminWallpaper2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+.PSER-I-I-2 { 
+    grid-row: 2; border-radius: 0.75em;
+    /* background-image:url('/assets/images/AdminWallpaper2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+.PSER-I-I-3 { 
+    grid-row: 3; border-radius: 0.75em;
+    /* background-image:url('/assets/images/AdminWallpaper2.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+
+
+/* NUEVO DISENO */
+
+.PSER-Titulo {
+    margin-top: 3em;
+}
+.PSER-Titulo-1 {
+    width: 50em;
+    text-align: center;
+}
+
+.PSER-TextSeccion {
+    /* font-family: fantasy; */
+    letter-spacing: 1.5px;
+    font-size: 4em;  
+    font-weight: 600;
+    color: #4F9000;
+}
+
+/* .PSER-ND-Cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.PSER-ND-Cards-Ch {
+    height: 12em;
+    width: 30em;
+    border: 1px solid #4F9000;
+    border-radius: 0.75em;
+} */
+
+       /* --------------------------- | COSAS MENORES | ------------------------ */
+
+    .TESTSN-Container {
+        margin: 3em 0 1em 0;
+        padding: 0 7em;
+    }
+    
+    .TESTSN-CardsMain {
+        display: grid;
+        grid-auto-columns: 30em;
+        grid-template-rows: 12em;
+        gap: 1.5em;
+        overflow-x: auto;
+        width: 100%;
+        padding-bottom: 2em;
+    }
+    
+    .TESTSN-Cards {
+        grid-row: 1;
+        border: 3px solid #6DD93B;
+        background: #4f900018;
+        border-radius: 0.75em;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        transition: background 0.7s ease-in-out;
+    }
+    
+    .TESTSN-Cards:hover {
+        background: transparent;
+        /* height: 25em;
+        width: 20em;
+        border-radius: 0.75em; */
+        background-image: url('/assets/images/World.png');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;   
+        cursor: grab;
+        /* transition: background 0.2s ease-out; */
+    }
+    
+    .TESTSN-Cards:hover .TESTSN-CardText {
+        color: #396601;
+        /* color: #fbff00; */
+    }
+    
+    .TESTSN-CardText {
+        font-size: 2.2em;
+        font-family:fantasy;
+        color: #6DD93B;
+        letter-spacing: 0.01em;
+        font-weight: 100;
+        /* direction: ltr; */
+    }
+
+    /* SCROLL DE SERVICIOS */
+
+    .TESTSN-CardsMain::-webkit-scrollbar { width: 2px; height: 3px;}
+    
+    .TESTSN-CardsMain::-webkit-scrollbar-track { background: transparent; }
+    
+    .TESTSN-CardsMain::-webkit-scrollbar-thumb {
+        background-color: #4F9000;
+        border-radius: 0.75em;
+    }
+
+    /* ---------------------------------------------------------------------- */
+
