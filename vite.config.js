@@ -22,12 +22,7 @@ export default defineConfig({
     ],
     resolve: {
         alias: {
-            vue: 'vue/dist/vue.esm-bundler.js',
+            vue: 'vue/dist/vue.runtime.esm-bundler.js', // Ajustado para Vue 3
         },
     },
-    build: {
-        rollupOptions: {
-          external: ['laravel-vite-plugin'],
-        },
-      },
 });
