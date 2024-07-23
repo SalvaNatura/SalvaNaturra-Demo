@@ -45,11 +45,11 @@ return [
 // CTDL
         'mysql' => [
             'driver' => 'mysql',
-            'host' => '127.0.0.1',
+            'host' => 'root',
             'port' => '3306',
             'database' => 'salvaNatura',
             'username' => 'root',
-            'password' => '',
+            'password' => 'XHGipOAktyhunFpPmzaaCjhywavqrPgL',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
