@@ -45,7 +45,7 @@ return [
 // CTDL
         'mysql' => [
             'driver' => 'mysql',
-            'host' => 'root',
+            'host' => 'mysql.railway.internal',
             'port' => '3306',
             'database' => 'salvaNatura',
             'username' => 'root',
