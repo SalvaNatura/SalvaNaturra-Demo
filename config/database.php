@@ -45,11 +45,11 @@ return [
 // CTDL
         'mysql' => [
             'driver' => 'mysql',
-            'host' => 'mysql.railway.internal',
-            'port' => '3306',
-            'database' => 'salvaNatura',
+            'host' => 'viaduct.proxy.rlwy.net',
+            'port' => '34128',
+            'database' => 'railway',
             'username' => 'root',
-            'password' => 'XHGipOAktyhunFpPmzaaCjhywavqrPgL',
+            'password' => 'vwXOpBsosNMBoLPgCkPeAsKgAaAMMBHv',
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
@@ -61,7 +61,7 @@ return [
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
         ],
-
+       
         /*'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
