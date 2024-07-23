@@ -23,13 +23,17 @@
         </div>
     
         <div class="TESTSN-Container">
-            <div class="mt-5" id="PSER-Main">
-    
+            <div class="mt-5" id="PPRO-Main">
+
             </div>
         </div>
 
         
     <main class="PP-Main" id="PP-Main">
+
+        
+        
+        
         {{-- <div class="">
             <h1>PROGRAMAS</h1>
         </div> --}}
@@ -78,6 +82,9 @@
             </div>
         </div> --}}
     </main>
+
+    @include('main_view.endCard')
+
 <script src="{{ mix('compilacion/usuario-programas.js') }}"></script>
 <script>
     const URL_GetContenidoProgramasAll = '{{ route('programas.getContenidosAll') }}';

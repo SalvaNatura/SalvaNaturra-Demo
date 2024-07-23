@@ -3,9 +3,6 @@
 @section('content')
 <link rel="stylesheet" href="{{ mix('compilacion/usuario-servicios.css') }}">
     @include('main_view.navbar')
-    {{-- <div class="mt-5" id="PSER-Main">
-
-    </div> --}}
 
     {{---------------------------| NUEVO DiSENO |-------------------- --}}
     <div class="PSER-Titulo GB-Flex">
@@ -28,16 +25,8 @@
 
     <div class="TESTSN-Container">
         <div class="mt-5" id="PSER-Main">
-
         </div>
     </div>
-
-
-
-
-
-
-
 
     {{-- <div class="GBborderBlack">
         <div class="GB-Flex PSER-ND-Cards">
@@ -50,6 +39,8 @@
         </div>
 
     </div> --}}
+
+    @include('main_view.endCard')
 <script src="{{ mix('compilacion/usuario-servicios.js') }}"></script>
 <script>
     const URL_GetContenidoServiciosAll = '{{ route('servicios.getContenidosTodos') }}';
